@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url("reset.css");
+
+.header {
+  max-width: 1200px;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  position: relative;
+  margin: 0 auto;
+}
+.logo > img {
+  height: 26px;
+  display: inline-block;
+  position: absolute;
+}
+.navigation {
+  display: inline-block;
+}
+.menu {
+  margin-left: 230px;
+  display: inline-block;
+  justify-content: flex-start;
+  line-height: 26px;
+  display: flex;
+}
+.main_menu .menu_item_text::after {
+  background: gray;
+  content: "";
+  display: block;
+  margin-top: 30px;
+}
+.menu_item_text {
+  flex-direction: row;
+  margin-right: 50px;
+  font-size: 1.2em;
+}
+.sub_menu {
+  background: palegreen;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  /* display: none; */
+}
+.siteOpt {
+  float: right;
+  font-size: 1em;
+  display: inline-block;
+  position: relative;
+  line-height: 26px;
+}
+.siteMap {
+  margin-right: 50px;
+  display: inline-block;
+}
+.language {
+  display: inline-block;
+}
+
+/* Main - Body */
+.num1 {
+  height: 610px;
+  background: gray;
+  width: 100%;
+}
+.media {
+  position: relative;
+}
+.info_area {
+  top: 250px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.mission_btn {
+  display: block;
+  margin: 60px;
+}
+.tagText {
+  display: block;
+  font-size: 2.5em;
+}
+/* section 2 */
+.num2 {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  background: burlywood;
+  height: 500px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2em;
+  margin: 40px 0px;
+}
+.new_contents {
+  width: 50%;
+  font-size: 1.1em;
+}
