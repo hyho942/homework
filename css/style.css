@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/* basic format reset CSS */
+/* link style */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.readable-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+/* html */
+.container {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+}
+/* menu */
+.nav_bar {
+  position: relative;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  top: 35px;
+  margin: 0 auto;
+}
+.header {
+  height: 90px;
+}
+.logoImg {
+  position: absolute;
+  height: 26px;
+  z-index: 100;
+}
+.main_menu {
+  margin-left: 230px;
+  display: inline-block;
+}
+.menu_items {
+  float: left;
+  margin-right: 50px;
+  font-size: 1.5em;
+}
+.main_menu_item_1:hover .sub_menu_1 {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+.hidden_drop {
+  display: inline-block;
+  margin-left: 370px;
+}
+
+/* site option */
+.siteOpt {
+  float: right;
+  font-size: 1em;
+}
+.site_navi {
+  display: inline-block;
+}
+.language {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50px;
+  line-height: 30px;
+  width: 100px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.sub_menu {
+  display: none;
+}
+/* video */
+
+.banner_media {
+  height: 610px;
+  background: wheat;
+  text-align: center;
+}
+
+.btn_video {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 180px;
+}
+
+/* body_main */
+.banner_news {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.title {
+  display: block;
+  display: block;
+}
+.moreBtn {
+  display: inline-block;
+  float: right;
+}
+.news_front {
+  background: green;
+  display: inline-block;
+}
+.news_back {
+  background: yellowgreen;
+  display: inline-block;
+}
+.arti {
+  width: 560px;
+}
