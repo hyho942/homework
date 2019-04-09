@@ -1,0 +1,101 @@
+@import url("reset.css");
+html {
+  background: blanchedalmond;
+  font-family: sans-serif;
+}
+
+/* reset */
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+/*********************************************/
+/* header */
+.header {
+  background: yellow;
+  max-width: 1200px;
+  min-height: 90px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+.logo > img {
+  height: 26px;
+  position: absolute;
+}
+
+/* menu */
+.navigation {
+  position: relative;
+  /* padding-left: 230px; */
+}
+.main-menu-list {
+  float: left;
+}
+.menu {
+  background: rgba(0, 153, 199, 0.7);
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+}
+.main-item-text,
+.siteNav {
+  background: greenyellow;
+  margin-right: 50px;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+.sub-menu > li {
+  background: orange;
+}
+.control-1 {
+  margin-left: 230px;
+}
+.sub-menu {
+  display: inline-block;
+  position: absolute;
+  /* display: none; */
+}
+.sub-1 {
+  left: 0;
+}
+.sub-1::before {
+  background: gray;
+  content: "test";
+  display: block;
+  padding: 20px 0;
+}
+.sub-2,
+.sub-3,
+.sub-4 {
+  display: none;
+}
+
+/* language */
+.language {
+  background: #000;
+  float: right;
+}
+.lang-btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 130px;
+  height: 40px;
+  margin-top: -5px;
+}
+.lang {
+  background: orange;
+  display: none;
+}
+/*********************************************/
+/* bg_menu */
+.menu_bg {
+  background: gray;
+  display: block;
+  height: 100px;
+}

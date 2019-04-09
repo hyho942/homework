@@ -8,14 +8,6 @@ a {
   text-decoration: none;
 }
 
-/* html */
-.container {
-  width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
-  position: relative;
-}
-
-/* nav area */
 /* 숨김 */
 .readable-hidden {
   position: absolute;
@@ -25,8 +17,15 @@ a {
   margin: -1px;
   clip: rect(0, 0, 0, 0);
 }
+/* html */
+.container {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+}
+
+/* nav area */
 .logoImg {
-  background: red;
   position: absolute;
   height: 26px;
   z-index: 100;

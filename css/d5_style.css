@@ -4,12 +4,14 @@
 
 /* 헤더 */
 .header {
+  background: yellow;
   max-width: 1200px;
   height: 90px;
   box-sizing: border-box;
   padding: 35px 40px;
   position: relative;
   margin: 0 auto;
+  align-items: center;
 }
 .logo > img {
   height: 26px;
@@ -20,6 +22,7 @@
   display: inline-block;
 }
 .menu {
+  background: greenyellow;
   margin-left: 230px;
   display: inline-block;
   justify-content: flex-start;
@@ -61,7 +64,9 @@
 .lang_title > li > a {
   display: none;
 }
-
+.language {
+  display: none;
+}
 /* Main - Body */
 .num1 {
   height: 610px;
