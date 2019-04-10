@@ -1,6 +1,5 @@
 @import url("reset.css");
 html {
-  background: blanchedalmond;
   font-family: sans-serif;
 }
 
@@ -18,13 +17,18 @@ a:active {
 /* header */
 .header {
   background: yellow;
+  position: relative;
+}
+.container-head {
+  background: cyan;
   max-width: 1200px;
   min-height: 90px;
+  padding: 30px 40px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 30px 40px;
 }
 .logo > img {
+  z-index: 100;
   height: 26px;
   position: absolute;
 }
@@ -32,70 +36,192 @@ a:active {
 /* menu */
 .navigation {
   position: relative;
-  /* padding-left: 230px; */
 }
 .main-menu-list {
   float: left;
 }
 .menu {
-  background: rgba(0, 153, 199, 0.7);
   position: absolute;
+  min-width: 1000px;
   display: inline-block;
-  width: 100%;
 }
 .main-item-text,
 .siteNav {
-  background: greenyellow;
   margin-right: 50px;
   font-size: 1.2em;
   line-height: 30px;
 }
+.siteNav {
+  margin-left: 250px;
+}
+
+/* Sub-menu */
+.sub-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: translateX(0%);
+}
+.control-1 > .sub-menu {
+  left: 0;
+}
 .sub-menu > li {
-  background: orange;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.1em;
 }
 .control-1 {
   margin-left: 230px;
 }
-.sub-menu {
-  display: inline-block;
-  position: absolute;
-  /* display: none; */
-}
-.sub-1 {
-  left: 0;
-}
-.sub-1::before {
-  background: gray;
-  content: "test";
+.control-1:hover .sub-1 {
+  padding: 60px 0 30px 0;
   display: block;
-  padding: 20px 0;
+  display: flex;
+  align-items: flex-start;
 }
-.sub-2,
-.sub-3,
+.control-1:hover .sub-menu,
+.control-2:hover .sub-menu,
+.control-3:hover .sub-menu,
+.control-4:hover .sub-menu {
+  overflow: hidden;
+  animation-name: slide-bottom2;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+.control-1:hover::before {
+  background: #ccc;
+  content: "";
+  display: block;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  animation-name: slide-bottom;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.control-2:hover .sub-2 {
+  padding: 60px 0 30px 0;
+  display: block;
+  display: flex;
+  align-items: flex-start;
+}
+.control-2:hover::before,
+.control-3:hover::before,
+.control-4:hover::before {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 80px;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  max-height: 80px;
+  animation-name: slide-bottom;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.control-3:hover .sub-3 {
+  padding: 60px 0 30px 0;
+  display: block;
+  display: flex;
+  align-items: flex-start;
+}
+.control-4:hover .sub-4 {
+  padding: 60px 0 30px 0;
+  display: block;
+  display: flex;
+  align-items: flex-start;
+}
+/*********************************************/
+/* 슬라이드 애니 */
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* @-webkit-keyframes slide-bottom {
+  0% {
+  }
+  100% {
+  }
+} */
+@keyframes slide-bottom {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 190px;
+  }
+}
+@keyframes slide-bottom2 {
+  0% {
+    height: 0;
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    /* height: 200px; */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*********************************************/
+.sub-1 {
+  display: none;
+}
+.sub-2 {
+  display: none;
+}
+.sub-3 {
+  display: none;
+}
 .sub-4 {
   display: none;
 }
-
+.mission-sub {
+  display: block;
+  margin-top: 10px;
+}
+.mission-sub > li {
+  margin-top: 20px;
+}
+.mission-sub > li > a {
+  color: gray;
+}
+/*********************************************/
 /* language */
 .language {
-  background: #000;
   float: right;
 }
 .lang-btn {
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 50px;
   width: 130px;
   height: 40px;
   margin-top: -5px;
+  position: relative;
 }
 .lang {
-  background: orange;
-  display: none;
+  /* display: none; */
+  background: yellowgreen;
+  padding: 22px;
+  font-size: 1.1em;
+  line-height: 30px;
+  position: absolute;
+  top: 8px;
+  opacity: 0.5;
+}
+.language::after {
+  content: "";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  width: 128px;
+  height: 150px;
+  opacity: 0.5;
 }
 /*********************************************/
-/* bg_menu */
-.menu_bg {
-  background: gray;
-  display: block;
-  height: 100px;
-}

@@ -1,0 +1,85 @@
+@import url("reset.css");
+
+html {
+  background: blanchedalmond;
+  font-family: sans-serif;
+}
+
+/* reset */
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+/*********************************************/
+
+/* HEAD */
+.header {
+  background: yellow;
+  position: relative;
+}
+.container-head {
+  background: greenyellow;
+  max-width: 1200px;
+  min-height: 90px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+/* logo */
+h1 > img {
+  height: 26px;
+  position: absolute;
+}
+/* nav */
+.navigation {
+  background: gray;
+  position: relative;
+}
+.menu {
+  background: blue;
+  padding-left: 230px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+.main_menu_list {
+  background: #000;
+  /* float: left; */
+}
+.main_item_text {
+  background: orangered;
+  margin-right: 50px;
+  font-size: 1.2em;
+}
+.sub_menu {
+  display: none;
+}
+.sub_menu > li {
+  background: orange;
+}
+.mission_sub {
+  background: palegreen;
+}
+
+.language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lang {
+  position: absolute;
+  display: inline-block;
+  line-height: 35px;
+}
+.lang-btn {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 10px;
+  width: 130px;
+  height: 40px;
+}
