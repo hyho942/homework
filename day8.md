@@ -18,7 +18,7 @@ W3C (World Wide Consortium)에서 정의하는 기술 표준을 말한다. 사�
     
 = CSS에서 다른 CSS 파일 연결
 	
-/* float 이슈를 해결하기 위한 css 모듈 */
+### float 이슈를 해결하기 위한 css 모듈
 <pre> .clearfix::after {
     content: "";
     clear: both; </pre>
@@ -50,7 +50,7 @@ W3C (World Wide Consortium)에서 정의하는 기술 표준을 말한다. 사�
 	~안에 A 특정 태그 선택. 
 		Ex) p.foo (p태그 안에  id=”foo”을 가진 요소 선택)
 
-[Web page 설계 방식]
+## [Web page 설계 방식]
 
 3단 구조: header, body(content), footer
 4단 구조: header, navigation ,body(content), footer
@@ -71,7 +71,8 @@ Header 해당하는 콘텐츠를 markup 할 때 사용. <div id=”header”>로
 <footer> 
  Copyright이나 회사 주소 정보를 사용 할 수 있다 <div id=”footer’> 로 대체가 가능.
 
-===== <header> <footer>는 문서에 다수 존재해도 되지만 HTML전체 구조에 메인을 담당하는 부분은 한 개만 사용이 가능하다. 
+	<header> <footer>는 문서에 다수 존재해도 되지만 HTML전체 구조에 메인을 담당하는 부분은 한 개만 사용이 가능하다. 
+	
 <section> 
 콘텐츠를 grouping 할 때 사용. Section 안에 section을 사용 할 수 있어서 중첩 사용이 가능하다. 
 
@@ -88,7 +89,7 @@ Navigation의 줄임말. 네비게이션 메뉴를 나타낸다.
 주로 웹 페이지를 구성하는 메인 콘텐츠를 담는 태그이다. <body>태그를 사용하여 구분할 수 있다. 
 
 
-[Box Model]
+## [Box Model]
 = Float
 	Left
 	Right
