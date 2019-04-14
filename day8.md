@@ -25,30 +25,30 @@ W3C (World Wide Consortium)에서 정의하는 기술 표준을 말한다. 사�
 
 ## [selector]
 * id	
-	+ 스타일을 지정할 때 한 가지만 지정해서 사용한다. ( # selector) 
-	+ 하나의 문서에 고유한 id 하나밖에 쓸 수 없다.
+	스타일을 지정할 때 한 가지만 지정해서 사용한다. ( # selector) 
+	하나의 문서에 고유한 id 하나밖에 쓸 수 없다.
 
 * class
-	+ 룹으로 묶어서 스타일을 지정할 때 사용한다. ( . selector)
+	룹으로 묶어서 스타일을 지정할 때 사용한다. ( . selector)
 
-		- = id / class는 숫자로 시작해서는 안된다.
+		= id / class는 숫자로 시작해서는 안된다.
 
 ## [Multi selector]
-자식 selector: [ > ] 
-= ~안에의 의미로 > 만 사용이 가능하며 왼쪽이 부모 혹은 더 큰 selector을 넣는다.
-Ex) div > p (div 안에 P만 선택)
+1. 자식 selector: [ > ] 
+	~안에의 의미로 > 만 사용이 가능하며 왼쪽이 부모 혹은 더 큰 selector을 넣는다.
+		Ex) div > p (div 안에 P만 선택)
 
-후손 tag: [ space ]
-= ~안에 있는 A 모두를 선택 할 때 사용한다. 
-Ex) div p (div 안에 P모두 선택)
+2. 후손 tag: [ space ]
+	~안에 있는 A 모두를 선택 할 때 사용한다. 
+		Ex) div p (div 안에 P모두 선택)
 
-그룹selector: [ , ] (쉼표)
-= 다수에 selector에 공통된 스타일을 주고 싶을 경우 사용한다. 
-Ex) div, p, a (div, p, a 모두)
+3. 그룹selector: [ , ] (쉼표)
+	다수에 selector에 공통된 스타일을 주고 싶을 경우 사용한다. 
+		Ex) div, p, a (div, p, a 모두)
 
-특정 id 값: [ selector.id ]
-= ~안에 A 특정 태그 선택. 
-Ex) p.foo (p태그 안에  id=”foo”을 가진 요소 선택)
+4. 특정 id 값: [ selector.id ]
+	~안에 A 특정 태그 선택. 
+		Ex) p.foo (p태그 안에  id=”foo”을 가진 요소 선택)
 
 [Web page 설계 방식]
 
@@ -62,8 +62,8 @@ b.	article = 독립적인 , section = 콘텐츠 블록  Markup
 3.	Naming = 	파스칼 첫 대문자
 i.	카멜 첫 소문자 두번째 대문자
 
-[Semantic Markup]
-	[Semantic Markup tag]
+## [Semantic Markup]
+### [Semantic Markup tag]
 
 <header> 
 Header 해당하는 콘텐츠를 markup 할 때 사용. <div id=”header”>로 대체가 가능. Or  <section>안에 <header>을 사용하여 section을 구분 할 수 있음
