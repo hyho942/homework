@@ -13,8 +13,9 @@ W3C (World Wide Consortium)에서 정의하는 기술 표준을 말한다. 사�
 2. Screen Reader 프로그램이 언어를 인식하여 자동으로 음성을 변환하거나 해당 언어에 적합한 발음을 제공한다. 
 3. 시각장애인을 위한 보조 속성으로 command + f5를 누르면 실행된다.
 4. Ko을 사용하는 경우 영어를 기본적으로 제공 하지만, En은  한글 자동 변환을 지원하지 않는다. 
-
-@import url("./normalize.css");
+	
+<pre> @import url("./normalize.css"); </pre> 
+    
 = CSS에서 다른 CSS 파일 연결
 	
 /* float 이슈를 해결하기 위한 css 모듈 */
