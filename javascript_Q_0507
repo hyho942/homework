@@ -1,5 +1,7 @@
 Questionary
 
+Q. pass by value 와 pass by reference의 개념이 이해되지 않습니다.
+
 Q. 렉시컬 환경 및 렉시컬에 정확한 뜻이 무었인가요?
 
 Q. 하나의 객체를 공유한다는것 -> 얇은 복사, 깊은 복사의 차이
